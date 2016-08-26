@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="AWS Suite" parallel="tests">
+<listeners>
+   <listener class-name="amazon.reporting.CustomizedReport"/>
+</listeners>
+  <test name="AWS Test">
+    <classes>
+      <class name="test.apis.ItemSearchTest"/>
+    </classes>
+  </test> <!-- AWS Test -->
+</suite> <!-- AWS Suite -->
